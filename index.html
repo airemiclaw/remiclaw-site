@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemiCLAW — Apps That Move You Forward</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            padding: 40px 24px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 14px;
+            color: rgba(255,255,255,0.4);
+            margin-top: 8px;
+        }
+
+        /* Main */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        /* App Cards */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .app-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 32px;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.06);
+        }
+        .app-icon-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        .app-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .app-card .subtitle {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 16px;
+        }
+        .app-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 20px;
+        }
+        .app-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .app-links a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .app-links a:hover {
+            color: #fff;
+        }
+
+        /* Begin Again specific */
+        .begin-again .app-icon-placeholder {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+        }
+        /* BeThere specific */
+        .bethere .app-icon-placeholder {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        footer p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.25);
+        }
+        footer a {
+            color: rgba(255,255,255,0.35);
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 640px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+            main {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">RemiCLAW</div>
+        <p class="tagline">Apps That Move You Forward</p>
+    </header>
+
+    <main>
+        <p class="section-title">Our Apps</p>
+
+        <div class="app-grid">
+            <!-- Begin Again -->
+            <div class="app-card begin-again">
+                <div class="app-icon-placeholder">↻</div>
+                <h3>Begin Again</h3>
+                <p class="subtitle">Stop spiraling. Start moving.</p>
+                <p>Break negative thought loops with real-time prompts and immediate action steps. No fluff. No journaling. Just one step — and what to do next.</p>
+                <div class="app-links">
+                    <a href="begin-again/privacy.html">Privacy Policy</a>
+                    <a href="begin-again/terms.html">Terms of Use</a>
+                    <a href="begin-again/support.html">Support</a>
+                </div>
+            </div>
+
+            <!-- BeThere -->
+            <div class="app-card bethere">
+                <div class="app-icon-placeholder">♡</div>
+                <h3>BeThere</h3>
+                <p class="subtitle">Show up for the people who matter.</p>
+                <p>Stay connected with the people in your life. BeThere helps you remember, reach out, and be present for the moments that matter most.</p>
+                <div class="app-links">
+                    <a href="bethere/privacy.html">Privacy Policy</a>
+                    <a href="bethere/terms.html">Terms of Use</a>
+                    <a href="bethere/support.html">Support</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RemiCLAW. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="mailto:support@remiclaw.com">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
